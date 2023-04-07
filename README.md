@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-<div style="text-align:center"><img src="images/cover3.png" /></div>
+<div style="text-align:center"><img src="images/cover_image.jpg" /></div>
 
 
 ## 1. Custom Commands
