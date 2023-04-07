@@ -60,7 +60,8 @@
 - gUU : Force all letters in a line to uppercase
 - guw : Force all letters in a word to lowercase
 - guu : Force all letters in a line to lowercase
-
+- :%s/oldword/newword/g : Change all instances of the word in the file.
+- :10,30s/oldword/newword
 
 ### Registers
 
@@ -96,3 +97,28 @@
 - :q! : quit and throw away unsaved changes
 - :wqa : write and quit on all tabs.
  
+
+### Comment a Block
+
+1. Move cursor the start.
+2. Ctrl+v to Visual-Block.
+3. Select block w/ jk.
+4. Shift+i to insert at beginning, type #.
+5. Press ESC.
+6. To repeat, go down, press ".".
+
+
+### Replace word within lines x-y
+
+Example: :10,20s/hello/hi/gc
+
+- Range 10-20
+- Replace "hello"
+- with "hi"
+
+Notes:
+
+- "s" substitution command
+- "g" global
+- Add c at the end for confirmation
+- If you want to replace it, y. If you don't want to replace it, type n. If you want to replace it and all remaining matches without asking, type a. If you want to skip this match and all remaining matches without asking, type q.
