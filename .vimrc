@@ -153,12 +153,6 @@ set textwidth=80
 set showcmd
 set signcolumn=yes
 
-set laststatus=2
-set statusline=%!lines#StatusLine()
-
-set showtabline=2
-set tabline=%!lines#TabLine()
-
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
